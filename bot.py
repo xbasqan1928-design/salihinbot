@@ -4,7 +4,7 @@ import yt_dlp
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = os.environ.get("TOKEN", "8318468441:AAG3XbsGlSHeH5KraJkiW8j0HIuVRozaW1g")
+TOKEN = os.environ.get("TOKEN")
 
 conn = sqlite3.connect("db.sqlite3", check_same_thread=False)
 cur = conn.cursor()
